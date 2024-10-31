@@ -1,0 +1,47 @@
+## **1. [4 hours] The Python Wizard!**
+
+By completing this challenge, we expect that we will be able to capture a glimpse of your Python proficiency, including:
+
+- Ability to load and preprocess data from different sources (CSV and API).
+- Proficiency in using Python libraries for data manipulation and API interaction.
+- Understanding of data quality concepts and methods for comparison.
+- Clear and concise reporting of findings and recommendations.
+
+### Context and Data Sources
+
+Our company is working on a project that utilises a book dataset downloaded from Kaggle, specifically "books.csv.zip". This dataset contains various books’ titles, authors, and other bibliographic details. **Our company wants to verify the accuracy and completeness of the author data for a specific author, namely George R.R. Martin, in the Kaggle dataset.**
+
+The goal is to compare the books listed as authored by George R.R. Martin in the "books.csv.zip" dataset with the information available on the Open Library API.
+
+- **Kaggle Dataset:**
+    - [books.csv.zip](https://www.dropbox.com/s/eqt3ejka6v0dsm0/books.csv.zip?dl=0)
+- **Open Library API:** Use "https://openlibrary.org/search.json?q=author:George+R.R.+Martin" to retrieve a list of books and related information.
+
+### Guidelines and Deliverables
+
+1. **Data Loading and Preprocessing**
+    - Load the dataset in Python.
+    - Preprocess the data, ensuring author names are formatted consistently (e.g., removing typos, standardising capitalisation).
+    - Identify and handle any missing values in the author field.
+2. **Open Library API Integration**
+    - Use a Python library to interact with the Open Library API.
+    - Construct a query URL to search for books by "*author:George+R.R.+Martin*".
+    - Parse the JSON response from the API to extract a list of book titles and authors.
+3. **Overlap Analysis**
+    - Compare the list of books attributed to George R.R. Martin in the Kaggle dataset with the list retrieved from the Open Library.
+    - Identify matches (books listed in both sources) and mismatches (books only present in one source).
+4. **Data Quality Insights**
+    - Analyse the overlap between the datasets.
+    - Calculate the percentage of books in the Kaggle dataset that are confirmed by Open Library for George R.R. Martin.
+    - Investigate potential reasons for discrepancies (e.g., missing entries in Kaggle, aliases not captured in Open Library).
+5. **Bonus Challenge**
+    - Enhance the analysis by considering additional data points (e.g., publication dates) to further refine the comparison between datasets.
+6. **Documentation and Deliverable**
+    - Document the steps taken, including code and data manipulation details.
+    - Create a video, under 5 minutes, explaining the:
+        - code and the rationale behind your decisions;
+        - findings, including the overlap percentage between datasets;
+        - identified discrepancies and potential explanations;
+        - and, recommendations for improving data quality based on the analysis.
+        
+        Assume a non-technical audience. To create the video, you can use [Loom](https://www.loom.com) or your preferred video recording software
